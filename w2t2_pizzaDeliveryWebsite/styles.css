@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border: 0px solid red;
+}
+
+.navbar ul {
+    list-style-type: none;
+    border: 0px dotted blue;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    border: 3px solid yellow;
+    background-color: red;
+    width: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+}
+
+.navbar a {
+    border: 3px dotted white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: red;
+}
