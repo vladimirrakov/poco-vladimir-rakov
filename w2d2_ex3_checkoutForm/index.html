@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bottles Boutique - Checkout Form</title>
+  </head>
+
+  <body>
+    <nav>
+      <img
+        class="bottle_boutique_logo"
+        src="images/bottle_boutique_logo.png"
+        alt="bottle boutique logo"
+      />
+
+      <ul>
+        <li><a href="#">Shop Bottles</a></li>
+        <li><a href="#">Reviews&Stories</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href=""><img src="images/icon_login_background_transparent.jpg" alt="Login" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/icon_basket_background_transparent.png" alt="Basket" /></a>
+        </li>
+      </ul>
+
+      <div>
+        <button>EN</button>
+        <ul>
+          <li><a href="">Deutsch</a></li>
+          <li><a href="">Francais</a></li>
+          <li><a href="">English</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Checkout Form</h1>
+    </header>
+
+    <main>
+      <h2>Your Order</h2>
+      <!-- Table of ordered items -->
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Bottle A</td>
+          <td>1</td>
+          <td>CHF 45.00</td>
+        </tr>
+        <tr>
+          <td>Bottle B</td>
+          <td>2</td>
+          <td>CHF 90.00</td>
+        </tr>
+        <tr>
+          <td><strong>TOTAL</strong></td>
+          <td><strong>3</strong></td>
+          <td><strong>CHF 135.00</strong></td>
+        </tr>
+      </table>
+
+      <!-- The Form -->
+      <section class="form">
+        <h2>Billing address</h2>
+        <p><em>*Required fields</em></p>
+
+        <form action="">
+          <!-- Contact details -->
+          <fieldset class="contact_details">
+            <legend>Contact details</legend>
+            <label for="fname">First name *</label>
+            <input type="text" id="fname" name="fname" required />
+            <br />
+            <label for="lname">Last name *</label>
+            <input type="text" id="lname" name="lname" required />
+            <br />
+            <label for="email">E-Mail address *</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+          <br />
+
+          <!-- Address details -->
+          <fieldset class="address_details">
+            <legend>Address details</legend>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" />
+            <br />
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" />
+            <br />
+            <label for="zip">Zip code</label>
+            <input type="text" id="zip" name="zip" />
+            <br />
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" />
+            <br />
+            <label for="phone">Phone</label>
+            <input type="tel" id="tel" name="tel" />
+            <br />
+            <input type="checkbox" id="send" name="send" value="send" />
+            <label for="send"> Send to this address</label><br />
+          </fieldset>
+          <br />
+
+          <!-- Shipping address -->
+          <fieldset class="shipping_address">
+            <legend>Shipping address</legend>
+            <label for="shipping_fname">First name</label>
+            <input type="text" id="shipping_fname" name="shipping_fname" />
+            <br />
+            <label for="shipping_lname">Last name</label>
+            <input type="text" id="shipping_lname" name="shipping_lname" />
+            <br />
+            <label for="shipping_company">Company</label>
+            <input type="text" id="shipping_company" name="shipping_company" />
+            <br />
+            <label for="shipping_address">Address</label>
+            <input type="text" id="shipping_address" name="shipping_address" />
+            <br />
+            <label for="shipping_zip">Zip code</label>
+            <input type="text" id="shipping_zip" name="shipping_zip" />
+            <br />
+            <label for="shipping_city">City</label>
+            <input type="text" id="shipping_city" name="shipping_city" />
+          </fieldset>
+          <br />
+
+          <!-- Delivery method -->
+          <fieldset class="delivery_method">
+            <legend>Delivery method *</legend>
+            <input
+              type="radio"
+              id="deliveryMethod1"
+              name="deliveryMethod1"
+              value="PickUp"
+            />
+            <label for="deliveryMethod1"> Pick up (CHF 0.00)</label><br />
+            <input
+              type="radio"
+              id="deliveryMethod2"
+              name="deliveryMethod2"
+              value="Post"
+            />
+            <label for="deliveryMethod2"> Post (CHF 7.00)</label><br />
+          </fieldset>
+          <br />
+
+          <!-- Payment method -->
+          <fieldset class="payment_method">
+            <legend>Payment method *</legend>
+            <input
+              type="radio"
+              id="paymentMethod1"
+              name="paymentMethod1"
+              value="Twint"
+            />
+            <label for="paymentMethod1"> Twint</label><br />
+            <input
+              type="radio"
+              id="paymentMethod2"
+              name="paymentMethod2"
+              value="Invoice"
+            />
+            <label for="paymentMethod2"> Invoice</label><br />
+          </fieldset>
+          <br />
+
+          <!-- Comment Form -->
+          <fieldset class="payment_method">
+            <legend>Comment</legend>
+            <textarea
+              name="Comment"
+              id="commentField"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <br />
+
+          <!-- Submit button -->
+          <input type="button" onclick="formSubmit()" value="Submit" />
+          <br />
+        </form>
+      </section>
+
+      <!-- Stories section -->
+      <section>
+        <div>
+          <h2>Stories</h2>
+          <a href="">All stories and reviews >></a>
+        </div>
+
+        <br />
+
+        <div>
+          <article>
+            <img src="images/banner1.png" alt="Co-brand your bottle" />
+            <div>
+              <h3>Co-brand your bottle</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                odit!
+              </p>
+              <a href="">Read more >></a>
+            </div>
+          </article>
+
+          <br />
+
+          <article>
+            <img src="images/banner2.png" alt="Top Reviews" />
+            <div>
+              <h3>Top Reviews</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                odit!
+              </p>
+              <a href="">Read more >></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li>Contact us</li>
+          <li>FAQ</li>
+          <li>Return & Refund</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+      <div>
+        <h3>About us</h3>
+        <p>
+          Bottles Boutique is a small online shop based in Zurich, Switzerland
+          with the goal to sell beautiful, re-useable bottles which are later
+          recyclable for a fair price.
+        </p>
+      </div>
+      <address>
+        © 2023, Bottles Boutique, Sample Street 5, 7897 Sample City
+      </address>
+    </footer>
+  </body>
+</html>
