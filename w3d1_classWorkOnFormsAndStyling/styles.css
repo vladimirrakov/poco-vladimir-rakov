@@ -12,7 +12,7 @@ html, body {
 
 /* Other styles */
 
-/* Pseudo elements */
+/* Pseudo-element */
 
 h1::before {
     background: black;
