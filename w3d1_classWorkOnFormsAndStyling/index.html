@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form Styles</title>
+  </head>
+  <body>
+    <h1>Sample form</h1>
+    <p>To test different tags one can use in HTML</p>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>This is a section title if the form has sections</legend>
+
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="first-name"
+          placeholder="e.g. Susanne"
+          required
+        />
+
+        <label for="msg">Message:</label>
+        <textarea
+          id="msg"
+          name="message"
+          placeholder="Write your message here"
+          rows="10"
+        ></textarea>
+
+        <label for="country">Country:</label>
+        <select name="countryName" id="country">
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+        </select>
+
+        <input 
+          type="checkbox" 
+          id="terms" 
+          name="terms-conditions"
+          value="terms accepted"
+          required
+        />
+        <label for="terms">I accept the terms and conditions</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment method</legend>
+
+        <input type="radio" id="cc" name="paymentMethod" value="Credit Card" />
+        <label for="cc"> Credit Card</label>
+
+        <input type="radio" id="twint" name="paymentMethod" value="Twint" />
+        <label for="twint"> Twint</label>
+      </fieldset>
+    </form>
+
+    <!-- In the line below the testDocument.pdf is a test file that does  not exist. -->
+    <a href="testDocument.pdf" target="_blank">Read more</a>
+  </body>
+</html>

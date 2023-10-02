@@ -1,0 +1,69 @@
+/* Normalizing CSS */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Other styles */
+
+/* Pseudo elements */
+
+h1::before {
+    background: black;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 50px;
+}
+
+/* Selects all links to .pdf documents */
+
+[href$="*.pdf"] {
+    content: "(.pdf)"";
+}
+
+/* Overwrites the "(.pdf)" written in Line 23 with "(opens in a new window)" */
+
+[target="_blank"]::after {
+    content: " (opens in a new window)"
+}
+
+fieldset {
+    align-items: baseline;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr;
+}
+
+label {
+    margin: 1rem 0 0.5rem;
+}
+
+/* Below the order of labels and checkboxes/radio buttons
+is switched in CSS. But another way to change 
+the order of these elements in HTML file: to write "label"
+after "input" fields. 
+
+#cc {
+    order: 0;
+}
+​
+[for="cc"] {
+    order: 1;
+}
+​
+#twint {
+    order: 2;
+}
+​
+[for="twint"] {
+    order: 3;
+}
+
+*/

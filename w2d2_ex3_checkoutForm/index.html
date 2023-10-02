@@ -23,10 +23,18 @@
 
       <ul>
         <li>
-          <a href=""><img src="images/icon_login_background_transparent.jpg" alt="Login" /></a>
+          <a href=""
+            ><img
+              src="images/icon_login_background_transparent.jpg"
+              alt="Login"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="images/icon_basket_background_transparent.png" alt="Basket" /></a>
+          <a href=""
+            ><img
+              src="images/icon_basket_background_transparent.png"
+              alt="Basket"
+          /></a>
         </li>
       </ul>
 
@@ -46,6 +54,7 @@
 
     <main>
       <h2>Your Order</h2>
+
       <!-- Table of ordered items -->
       <table>
         <tr>
@@ -75,7 +84,8 @@
         <h2>Billing address</h2>
         <p><em>*Required fields</em></p>
 
-        <form action="">
+        <form action="process_contact.php" method="post">
+          
           <!-- Contact details -->
           <fieldset class="contact_details">
             <legend>Contact details</legend>
@@ -146,6 +156,7 @@
               value="PickUp"
             />
             <label for="deliveryMethod1"> Pick up (CHF 0.00)</label><br />
+            
             <input
               type="radio"
               id="deliveryMethod2"
@@ -159,17 +170,19 @@
           <!-- Payment method -->
           <fieldset class="payment_method">
             <legend>Payment method *</legend>
+            
             <input
               type="radio"
               id="paymentMethod1"
-              name="paymentMethod1"
+              name="paymentMethod"
               value="Twint"
             />
             <label for="paymentMethod1"> Twint</label><br />
+            
             <input
               type="radio"
               id="paymentMethod2"
-              name="paymentMethod2"
+              name="paymentMethod"
               value="Invoice"
             />
             <label for="paymentMethod2"> Invoice</label><br />
