@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+    font: 1.1em/1.4 Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    border: 5px solid rgb(86, 98, 110);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.wrapper>section {
+    background-color: rgb(89, 161, 175);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 10px;
+}
