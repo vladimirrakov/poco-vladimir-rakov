@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+ul,
+ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    height: 80vh;
+    /* Removes horizontal bar and makes slides
+    to slide on each other + Keeps the 
+    navigation bar of the slider present
+    under each slide */
+    overflow-x: hidden;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; */
+    position: relative;
+}
+
+ol {
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+li {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+ul li {
+    background-color: rgb(68, 71, 114);
+    /* Read about the meaning of three digits in flex below */
+    flex: 1 0 100%;
+    font-size: 10rem;
+    position: absolute;
+    transition: transform 0.5s ease-out;
+    transform: translateX(-90%);
+    width: 100%;
+    z-index: 1;
+    /* transition: transform 2s ease-in-out;
+    transform: translateX(-100%); */
+    /* scroll-snap-align: start; */
+}
+
+/* Targeted li */
+ul li:target {
+    transform: translateX(0%);
+    z-index: 3;
+}
+
+ul li:target~li {
+    transform: translateX(90%);
+}
+
+ul li:nth-child(even) {
+    background-color: rgb(26, 117, 23);
+}
+
+/* I could have done it as follows
+instead of Lines 23-25 above:
+
+ul li:nth-child(odd) {
+    background-color: blue;
+} */
+
+/* Below 9 lines are for example of color transition with hover on links */
+a {
+    color: red;
+    transition: color linear 2s;
+}
+
+a:hover {
+    color: green;
+    transition: color 0 linear 0;
+}
