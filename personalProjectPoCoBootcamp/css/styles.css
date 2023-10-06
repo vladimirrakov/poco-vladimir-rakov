@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.weather-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.weather-container p {
+    margin: 10px 0;
+}
