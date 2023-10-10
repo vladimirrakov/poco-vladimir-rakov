@@ -20,19 +20,23 @@ function displayWeatherData(weatherData) {
   const weatherConditions = weatherData.weather[0].description;
 
   // Create HTML elements to display the data
-  const temperatureElement = document.createElement("p");
+  const cityElement = document.createElement("h2");
+  cityElement.textContent = `City: ${cityName}`;
+
+  const temperatureElement = document.createElement("h3");
   temperatureElement.textContent = `Temperature: ${temperature}°C`;
 
   const conditionsElement = document.createElement("p");
   conditionsElement.textContent = `Weather Conditions: ${weatherConditions}`;
 
   // Append the elements to the weatherContainer
+  weatherContainer.appendChild(cityElement);
   weatherContainer.appendChild(temperatureElement);
   weatherContainer.appendChild(conditionsElement);
 }
 
 // Indicate your actual API key
-const WeatherApiKey;
-const cityName = "New York"; // Replace with the desired city name
+const apiKey = WeatherApiKey;
+const cityName = "Bern"; // Replace with the desired city name
 
 fetchWeatherData(cityName, apiKey);

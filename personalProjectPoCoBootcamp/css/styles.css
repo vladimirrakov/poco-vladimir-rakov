@@ -1,14 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-}
+/* Start of weather widget related css */
 
-.weather-container {
-    background-color: #f5f5f5;
+#weather-data {
+    background-color: rgb(255, 255, 166);
+    border-style: 5px solid rgb(142, 15, 15);
     border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 50px;
+    width: 50%;
 }
 
-.weather-container p {
+#weather_data_heading {
+    font-weight: 800;
+    color: green;
+}
+
+#weather-data h2 {
+    color: red;
     margin: 10px 0;
 }
+
+#weather-data h3 {
+    color: blue;
+    margin: 10px 0;
+}
+
+#weather-data p {
+    margin: 10px 0;
+}
+
+/* End of weather widget related css */
