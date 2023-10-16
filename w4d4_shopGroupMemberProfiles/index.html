@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class Member Profiles</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="page_header">Class Member Profiles - Powercoders Bootcamp of Fall 2023</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="filterMembers('All')">All</a></li>
+        <li><a href="#" onclick="filterMembers('Bern')">Bern</a></li>
+        <li><a href="#" onclick="filterMembers('Zurich')">Zürich</a></li>
+        <li><a href="#" onclick="filterMembers('Lausanne')">Lausanne</a></li>
+      </ul>
+    </nav>
+
+    <div id="members-container"></div>
+
+    <script src="./data/profiles.js"></script>
+    <!-- <script src="filtering.js"></script> -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
