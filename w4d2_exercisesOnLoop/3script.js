@@ -3,15 +3,13 @@
 // For each iteration, it will check if the current number is even or odd.
 // Report the result to the screen (e.g. "2 is even").
 
-let myNumber = 0;
+let myNumber = 12;
 
 while (myNumber < 21) {
   if (myNumber % 2) {
     console.log(`${myNumber} is odd`);
-    alert(`${myNumber} is odd`);
   } else {
     console.log(`${myNumber} is even`);
-    alert(`${myNumber} is odd`);
   }
 
   myNumber++;
@@ -21,9 +19,7 @@ while (myNumber < 21) {
 // for (let myNumber = 0; myNumber <= 10; myNumber++) {
 //   if (myNumber % 2) {
 //     console.log(`${myNumber} is odd`);
-//     alert(`${myNumber} is odd`);
 //   } else {
 //     console.log(`${myNumber} is even`);
-//     alert(`${myNumber} is odd`);
 //   }
 // }
