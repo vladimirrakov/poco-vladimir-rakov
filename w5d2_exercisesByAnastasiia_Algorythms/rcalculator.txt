@@ -1,0 +1,31 @@
+Inputs:
+Current age (integer)
+Age at which the user wants to retire (integer)
+
+Outputs:
+Years left until retirement (integer)
+Year the user can retire (integer)
+
+Processes:
+Prompt for the current age and the age the user wishes to retire at.
+Calculate the years left until retirement.
+Calculate the year the user can retire.
+
+Constraints:
+The age input should be a positive integer.
+Retirement age should be greater than the current age.
+
+Edge Cases:
+If the user inputs a current age greater than or equal to the retirement age, display a different message like "You can already retire."
+
+1. Initialize variable currentAge and set it to 0.
+2. Initialize variable retirementAge and set it to 0.
+3. Initialize variable currentYear and set it to the current year.
+4. Prompt the user for currentAge.
+5. Prompt the user for retirementAge.
+6. If retirementAge <= currentAge, print "You can already retire."
+7. Else,
+  1. Calculate yearsUntilRetirement as retirementAge - currentAge.
+  2. Calculate retirementYear as currentYear + yearsUntilRetirement.
+  3. Print "You have yearsUntilRetirement years left until you can retire."
+  4. Print "It's currentYear, so you can retire in retirementYear."
