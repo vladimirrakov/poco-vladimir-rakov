@@ -17,7 +17,7 @@ let futureYear = 0;
 do {
   futureYear = +prompt("Please, enter the desired year to be a positive integer (e.g. 1995)");
 } while (isNaN(futureYear) || futureYear<=0); 
-
+debugger;
 if(futureYear >= birthYear){
   let age = futureYear - birthYear;
   console.log(`I will be either ${age-1} or ${age} in ${futureYear}`);
