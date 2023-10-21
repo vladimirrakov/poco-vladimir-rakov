@@ -1,0 +1,25 @@
+It allows you to access and manipulate the DOM of the current web page:
+
+Find the DOM node you want to change
+document.body.textContent = "New text";
+
+Select an element
+document.getElementById(id)
+document.getElementsByClassName(classname)
+document.getElementsByTagName(tagname)
+
+Store this DOM node as a variable
+let elm = document.getElementById("demo");
+
+Manipulate the DOM node
+( Change its attributes
+Modify its styles
+Give it new inner HTML
+Append new nodes to it )
+elm.childNodes returns an array of an element's children
+elm.firstChild returns the first child node of an element
+elm.lastChild returns the last child node of an element
+elm.hasChildNodes returns true if there are children
+elm.nextSibling returns the next node at the same level
+elm.previousSibling returns the previous node
+elm.parentNode returns the parent node of an element

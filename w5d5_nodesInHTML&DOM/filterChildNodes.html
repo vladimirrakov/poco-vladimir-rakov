@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="demo">
+        <!-- Comment -->
+        <p>Paragraph 1</p>
+        <span>Paragraph 2</span>
+        <p>Paragraph 3</p>
+    </div>
+
+    <script>
+      let elm = document.getElementById("demo");
+      let arr = elm.childNodes;
+
+      let filteredArr = Array.from(arr).filter(filterAllNodeTypes1);
+
+      arr.forEach(function (el) {
+        el.textContent = "new text";
+      });
+
+    function filterAllNodeTypes1(node) {
+        return node.nodeType === 1;
+    }
+
+    </script>
+  </body>
+</html>

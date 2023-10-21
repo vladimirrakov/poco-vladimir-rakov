@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Let's evaluate your math problems</h1>
+    <input placeholder="Math expression" />
+    <p id="resultP">Result is:</p>
+  </body>
+
+  <script>
+    let input = document.getElementsByTagName("input")[0];
+
+    input.onkeyup = (event) => {
+      try {
+        const expression = event.srcElement.value;
+        if (!expression) return;
+        document.getElementById("resultP").innerText =
+          "Result is: " + eval(expression);
+      } catch (e) {}
+    };
+  </script>
+</html>

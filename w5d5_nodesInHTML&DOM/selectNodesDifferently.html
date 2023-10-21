@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="demo1">
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+
+    <br />
+
+    <div id="demo2">
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+
+    <script>
+      // Actions for demo1 div
+      firstParagraph = document.querySelector("p");
+
+      firstParagraph.textContent = "New Paragraph";
+
+      // Actions for demo2 div
+
+      // Select all nodes of demo2 parent by "#demo2 > *"
+      let arr = document.querySelectorAll("#demo2 > *");
+
+      arr.forEach(function (x) {
+        x.textContent = "New text";
+      });
+    </script>
+  </body>
+</html>

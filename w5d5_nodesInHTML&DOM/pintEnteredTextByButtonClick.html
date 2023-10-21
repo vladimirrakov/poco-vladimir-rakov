@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Property Access Example</title>
+  </head>
+  <body>
+    <label for="input">Enter property name:</label>
+    <input type="text" id="input" />
+    <button onclick="printProperty()">Print Property</button>
+    <div id="output"></div>
+
+    <script>
+      function printProperty() {
+        let userInput = document.getElementById("input").value;
+        let outputElement = document.getElementById("output");
+        outputElement.innerText = userInput;
+      }
+    </script>
+  </body>
+</html>
